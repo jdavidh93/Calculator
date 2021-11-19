@@ -17,85 +17,168 @@ const cl = document.getElementById("cl");
 const cn = document.getElementById("cn");
 
 //Funciones
+
 const fnA1 = () => {
-  letters.innerHTML = "A";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    numbers.innerHTML = "1";
+  } else {
+    letters.innerHTML = "A";
+  }
 };
 const fnB2 = () => {
-  if (letters.innerHTML == "A") {
-    letters.innerHTML += "B";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "1") {
+      numbers.innerHTML += "2";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "A") {
+      letters.innerHTML += "B";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnC3 = () => {
-  if (letters.innerHTML == "AB") {
-    letters.innerHTML += "C";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "12") {
+      numbers.innerHTML += "3";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "AB") {
+      letters.innerHTML += "C";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnD4 = () => {
-  if (letters.innerHTML == "ABC") {
-    letters.innerHTML += "D";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "123") {
+      numbers.innerHTML += "4";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABC") {
+      letters.innerHTML += "D";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnE5 = () => {
-  if (letters.innerHTML == "ABCD") {
-    letters.innerHTML += "E";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "1234") {
+      numbers.innerHTML += "5";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCD") {
+      letters.innerHTML += "E";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnF6 = () => {
-  if (letters.innerHTML == "ABCDE") {
-    letters.innerHTML += "F";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "12345") {
+      numbers.innerHTML += "6";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCDE") {
+      letters.innerHTML += "F";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnG7 = () => {
-  if (letters.innerHTML == "ABCDEF") {
-    letters.innerHTML += "G";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "123456") {
+      numbers.innerHTML += "7";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCDEF") {
+      letters.innerHTML += "G";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnH8 = () => {
-  if (letters.innerHTML == "ABCDEFG") {
-    letters.innerHTML += "H";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if (numbers.innerHTML == "1234567") {
+      numbers.innerHTML += "8";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCDEFG") {
+      letters.innerHTML += "H";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnI9 = () => {
-  if (letters.innerHTML == "ABCDEFGH") {
-    letters.innerHTML += "I";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if ((numbers.innerHTML = "12345678")) {
+      numbers.innerHTML += "9";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCDEFGH") {
+      letters.innerHTML += "I";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 const fnJ0 = () => {
-  if (letters.innerHTML == "ABCDEFGHI") {
-    letters.innerHTML += "J";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    if ((numbers.innerHTML = "123456789")) {
+      numbers.innerHTML += "0";
+    } else {
+      alert("Faltan numeros");
+    }
   } else {
-    alert("Faltan letras");
+    if (letters.innerHTML == "ABCDEFGHI") {
+      letters.innerHTML += "J";
+    } else {
+      alert("Faltan letras");
+    }
   }
 };
 
 const fnCL = () => {
-  letters.innerHTML = "";
+  if (letters.innerHTML == "ABCDEFGHIJ") {
+    letters.innerHTML = " ";
+  } else {
+    alert("No letras para borrar");
+  }
 };
-const fnCN = () => {};
+const fnCN = () => {
+  if (numbers.innerHTML == "1234567890") {
+    numbers.innerHTML = " ";
+  } else {
+    alert("No hay numeros para borrar");
+  }
+};
 
 //Evento
-a1.onclick = (e) => {
-  if (e) {
-    fnA1() = letters.innerHTML="A "
-  } else {
-    numbers.innerHTML="1"
-  }
+a1.onclick = () => {
+  fnA1();
 };
 b2.onclick = () => {
   fnB2();
